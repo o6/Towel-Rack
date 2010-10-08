@@ -1,0 +1,21 @@
+name: CZKit
+
+download:
+    type: git
+    url: git://github.com/CarterA/CZKit.git
+
+compile:
+    command: xcodebuild
+    flags: -target "Build All" -configuration "Release"
+
+link:
+    file_templates:
+        type: soft_link
+        source: Products/Release/Templates
+        destination: ~/Library/Application Support/Developer/Shared/Xcode/File Templates/CZKit
+    
+    headers:
+        type: soft_link
+        source: Products/Release/CZKit Headers.bundle
+        destination: Include/CZKit
+    

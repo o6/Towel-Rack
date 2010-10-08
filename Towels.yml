@@ -1,0 +1,4 @@
+# towel_directories:
+#    -Towels #default = Towels
+sources_directory: Sources # default = .towel_sources
+
