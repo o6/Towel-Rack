@@ -1,0 +1,16 @@
+name: BWToolkit
+
+download:
+    type: hg
+    url: http://bitbucket.org/bwalkin/bwtoolkit
+
+compile:
+    command: xcodebuild
+    flags: -target "All" -configuration "Release"
+
+link:
+    framework:
+        type: soft_link
+        source: build/Release/BWToolkitFramework.framework
+        destination: Include/BWToolkitFramework.framework
+
